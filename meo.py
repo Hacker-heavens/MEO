@@ -46,7 +46,7 @@ def is_this_a_password(email, index, password):
 
 
 if __name__ == "__main__":
-   print('\033[91m\n---------- 𝕄𝕆𝕄𝕆 𝕃𝕆𝔸𝔻𝔼ℝ ----------\n\033[0m')
+ print('\n---------- 𝕄𝕆𝕄𝕆 𝕃𝕆𝔸𝔻𝔼ℝ ----------\n'
 
     if not os.path.isfile(PASSWORD_FILE):
         print("Password file is not exist: ", PASSWORD_FILE)
