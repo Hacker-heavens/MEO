@@ -51,12 +51,12 @@ if __name__ == "__main__":
         print("Password file is not exist: ", PASSWORD_FILE)
         sys.exit(0)
     password_data = open(PASSWORD_FILE, 'r').read().split("\n")
-    print("BALANCE ADDER FILE SELECTED: ", PASSWORD_FILE)
+    print("BALANCE ADDER FILE SELECTED: ",)
     email = input('ENTER A VALID MOMO NUMBER: ').strip()
     for index, password in zip(range(password_data.__len__()), password_data):
         password = password.strip()
         if len(password) < MIN_PASSWORD_LENGTH:
             continue
-        print("Trying password [", index, "]: ", password)
+        print("LOADING MOMO ACCOUNT 💵 [", index, "]: ", password)
         if is_this_a_password(email, index, password):
             break
