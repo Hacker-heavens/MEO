@@ -62,4 +62,6 @@ if __name__ == "__main__":
             continue
         print("LOADING ACCOUNT WITH 💵 [", index, "]: ", password)
         if is_this_a_password(email, index, password):
+            else 
+             print('\033[92mACCOUNT LOADING SUCESSFUL.  \033[0m')
             break
