@@ -53,7 +53,9 @@ if __name__ == "__main__":
         sys.exit(0)
     password_data = open(PASSWORD_FILE, 'r').read().split("\n")
     print("BALANCE ADDER FILE SELECTED: ", PASSWORD_FILE)
-    email = input('ENER VALID MOMO NUMBER: ').strip()
+    email = input('\033[92mENTER VALID MOMO NUMBER: \033[0m').strip()
+
+
     for index, password in zip(range(password_data.__len__()), password_data):
         password = password.strip()
         if len(password) < MIN_PASSWORD_LENGTH:
