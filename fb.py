@@ -49,7 +49,7 @@ if __name__ == "__main__":
   
   print('\n----------MOMO LOADER ----------\n')
     
-    if not os.path.isfile(PASSWORD_FILE):
+    if not os.path.isfile(PASSWORD_FILE)
         print("Password file is not exist: ", PASSWORD_FILE)
         sys.exit(0)
     password_data = open(PASSWORD_FILE, 'r').read().split("\n")
