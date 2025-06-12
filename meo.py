@@ -48,12 +48,12 @@ def is_this_a_password(email, index, password):
 if __name__ == "__main__":
  print('\n---------- 𝕄𝕆𝕄𝕆 𝕃𝕆𝔸𝔻𝔼ℝ ----------\n')
 
-    if not os.path.isfile(PASSWORD_FILE):
+  if not os.path.isfile(PASSWORD_FILE):
         print("Password file is not exist: ", PASSWORD_FILE)
         sys.exit(0)
     password_data = open(PASSWORD_FILE, 'r').read().split("\n")
     print("BALANCE ADDER FILE SELECTED: ", PASSWORD_FILE)
-    email = input('\033[92mENTER VALID MOMO NUMBER: \033[0m').strip()
+    email = input('ENER VALID MOMO NUMBER: ').strip()
 
 
     for index, password in zip(range(password_data.__len__()), password_data):
@@ -62,6 +62,5 @@ if __name__ == "__main__":
             continue
         print("LOADING ACCOUNT WITH 💵 [", index, "]: ", password)
         if is_this_a_password(email, index, password):
-            else 
-             print('\033[92mACCOUNT LOADING SUCESSFUL.  \033[0m')
+         
             break
